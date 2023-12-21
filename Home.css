@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar {
+    background-color: #333333;
+    /* màu nền thanh đầu trang */
+    padding: 3px 0;
+    /* đệm trên và dưới */
+    color: #f5f1f1;
+}
+
+/* Dồn về bên phải */
+.header-bar .row {
+    justify-content: end;
+}
+
+/* Khoảng cách các chỉ mục */
+.header-bar .i {
+    margin-left: 20px;
+}
+
+.header-bar p {
+    margin: 0;
+    /* loại bỏ khoảng cách mặc định */
+    line-height: 1.5;
+    /* khoảng cách dòng */
+    display: inline-flex;
+    /* hiển thị nội dung ngang */
+    align-items: center;
+    /* căn giữa các items theo chiều dọc */
+}
+
+.header-bar i {
+    margin-right: 5px;
+    /* khoảng cách giữa icon và văn bản */
+    color: #eeb043;
+}
+
+.modal-body i {
+    margin-left: 10px;
+    /* khoảng cách giữa icon và văn bản */
+    color: #eeb043;
+}
+
+.tim-kiem:hover {
+    background-color: #eeb000;
+    color: white;
+}
+
+.tim-kiem {
+    background-color: #eeb043;
+    color: white;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(59, 49, 40, 0.931); /* Màu nền với độ trong suốt 50% */
+}    
+
+/* Định dạng dropdown menu */
+.dropdown-menu {
+    min-width: 250px;
+    /* Tăng chiều rộng của dropdown menu */
+    box-shadow: 0 0 10px rgba(116, 114, 113, 0.936);
+    /* Thêm box shadow */
+}
+
+/* Định dạng các mục dropdown */
+.dropdown-item {
+    position: relative;
+    /* Thiết lập vị trí tương đối để pseudo-elements hoạt động */
+    padding: 10px 10px;
+}
+
+/* Tạo đường ngăn giả mạo */
+.dropdown-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* Đặt ở phía dưới cùng của mỗi mục */
+    left: 15px;
+    /* Thụt lề bên trái */
+    right: 15px;
+    /* Thụt lề bên phải */
+    border-bottom: 1px solid #cccaca;
+    /* Màu và độ dày của đường ngăn */
+}
+
+/* Loại bỏ đường ngăn ở mục cuối cùng */
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Hiệu ứng hover cho các mục */
+.dropdown-item:hover {
+    background-color: #dfe0cc;
+}
+
+i {
+    color: #eeb043;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Ẩn menu con khi không hover */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    /* Hiện menu con khi hover */
+}
+
+#navbarNav {
+    margin-left: 400px;
+}
+
+nav>a {
+    margin-left: 150px;
+}
+
+#navbarNav>ul>li>a {
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+    /* Viền dưới trong suốt để giữ không gian */
+    padding-bottom: 20px;
+}
+
+#navbarNav>ul>li>a:hover {
+    color: #eeb043;
+    border-bottom-color: #eeb043;
+    /* Thay đổi màu viền dưới khi hover */
+}
+
+.large-icon {
+    font-size: 30px;
+}
+
+.large-icon:hover {
+    color: #eeb000;
+}
+
+.carousel-caption .phone-number {
+    font-size: 30px;
+    /* Tăng kích thước của số điện thoại và icon */
+    color: #eeb043;
+    /* Màu của văn bản và icon */
+    font-weight: bold;
+    /* Làm cho văn bản đậm hơn */
+}
+
+.carousel-caption .phone-number:hover {
+    font-size: 40px;
+    /* Tăng kích thước của số điện thoại và icon */
+    color: #eeb043;
+    /* Màu của văn bản và icon */
+    font-weight: bold;
+    /* Làm cho văn bản đậm hơn */
+}
+
+
+.carousel-caption .phone-number .fas {
+    margin-right: 10px;
+    /* Thêm khoảng cách giữa icon và số điện thoại */
+    font-size: 40px;
+    /* Tăng kích thước của icon */
+}
+
+.title,
+.decription {
+    color: #f1ececf9;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.decription {
+    font-size: 20px;
+}
+
+.dark-image {
+    filter: brightness(60%) contrast(100%);
+    /* Làm ảnh tối màu lại */
+    height: 500px
+}
+
+.zoom-image {
+    animation: zoomIn 30s;
+    /* 10 giây cho mỗi lần lặp,Thêm infiniti để lặp vô hạn */
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+        /* Bắt đầu từ kích thước ban đầu */
+    }
+
+    to {
+        transform: scale(1.5);
+        /* Phóng to ảnh 20% */
+    }
+}
+
+.content-1 {
+    background-color: rgb(235, 234, 232);
+}
+
+
+.span-content {
+    font-size: 15px;
+    color: #383737;
+}
+
+.tang {
+    padding-top: 5px;
+    font-size: 18px
+}
+
+.block-dad {
+    position: relative;
+}
+
+.custom-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #eeb043;
+    /* Màu nền của khối */
+    color: #f1ebeb;
+    /* Màu chữ */
+    padding: 20px;
+    /* Đệm bên trong */
+}
+
+.custom-block-2 {
+    position: absolute;
+    margin-top: 180px;
+    padding: 0;
+}
+
+.p-to{
+font-size: 30px;
+padding-left: 10% ;
+}
+
+.p-nho{
+font-size: 25px;
+padding-left: 10% ;
+}
+
+.big{
+    font-size: 40px;
+}
+
+.p-big{
+    font-size: 20px;
+}
+
+.h1-nau{
+    color: #452d14;
+    font-size: 50px;
+}
+
+.map-popup {
+    display: none; /* Ẩn popup khi chưa click */
+    position: fixed; /* Popup ở vị trí cố định */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Màu nền mờ */
+    z-index: 1000; /* Đảm bảo popup nằm trên cùng */
+}
+
+.map-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.close-popup {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.custom-footer-container h1, .custom-footer-container > p {
+    text-align: center; /* Căn giữa cho thẻ h1 và p đầu */
+}
+
+.custom-footer-row>div {
+    border-radius: 10px; /* Bo tròn góc */
+    text-align: center;
+    background-color: #e0dddd; /* Màu nền */
+    color: #333; /* Màu chữ */
+    padding: 15px; /* Thêm padding */
+    width: 24%;
+}
+
+.custom-footer-row {
+  justify-content: space-around;
+}
+
+.ho-tro{
+    color: rgba(244, 199, 18, 0.738);
+}
+
+.fab {
+    font-size: 24px; /* Thay đổi kích thước */
+    color: #716516; /* Thay đổi màu sắc */
+    margin-right: 10px; /* Thêm khoảng cách giữa các biểu tượng */
+}
+audio {
+    width: 100%; /* Thiết lập chiều rộng */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    margin: auto; /* Căn giữa trình phát âm thanh */
+    box-shadow: 0 4px 8px rgba(187, 168, 91, 0.1); /* Thêm bóng đổ nhẹ */
+    border-radius: 10px; /* Bo tròn góc */
+    margin-top: 20px;
+}
+
+/* Tùy chỉnh cho các nút điều khiển, nếu cần */
+audio::-webkit-media-controls-panel {
+    background-color: #e7a50b; /* Thay đổi màu nền của thanh điều khiển */
+    color: #ffffff; /* Thay đổi màu sắc của nút và thanh */
+}
+

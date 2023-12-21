@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bất Phàm House</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo_tach_nen.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Thanh navbar -->
+        <div class="header-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="i">
+                        <p><i class="fas fa-map-marker-alt"></i>79 Mỹ An 7 -
+                            Ngũ Hành Sơn - Đà Nẵng</p>
+                    </div>
+                    <div class="i text-center">
+                        <p><i class="fas fa-phone-alt"></i>0899.607.659</p>
+                    </div>
+                    <div class="i text-right">
+                        <p><i class="fas fa-search" data-toggle="modal" data-target="#searchModal"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar navbar-expand navbar-dark  p-0 fixed" style="height:60px;">
+            <a class="navbar-brand" style="z-index: 1;" href="#"><img width="150" height="150"
+                    src="Image/logo_tach_nen.png" alt=""></a>
+            <div class="navbar-collapsee " id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            KHAI THÁC - VẬN HÀNH
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-right"></i>Nhà Nguyên
+                                Căn</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-right"></i>Mặt Bằng Kinh
+                                Doanh</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-right"></i>Home Stay -
+                                Villa</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-arrow-circle-right"></i>Căn Hộ </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="z-index: 0;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Image/anh 8.jpg" class="d-block w-100 dark-image zoom-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">Căn Hộ Đẹp,Giá Cả Hợp Lý</h1>
+                        <p class="decription">Căn hộ này thật sự là một kiệt tác của thiết kế hiện đại, kết hợp hài hòa
+                            giữa không gian thoáng đãng và nội thất sang trọng.</p>
+                        <div class="phone-number">
+                            <i class="fas fa-phone-alt"></i> 0899607659
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Image/anh 6.jpg" class="d-block w-100 dark-image zoom-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">Phòng Ốc Hiện Đại,Tiện Nghi</h1>
+                        <p class="decription">Ánh sáng tự nhiên tràn ngập căn phòng, kết hợp cùng việc bài trí nội thất
+                            thông minh, tạo nên một không gian sống vừa rộng rãi vừa ấm cúng.</p>
+                        <div class="phone-number">
+                            <i class="fas fa-phone-alt"></i> 0899607659
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Image/anh 4.jpg" class="d-block w-100 dark-image zoom-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">Free Vệ Sinh Hàng Tháng</h1>
+                        <p class="decription">Sự tiện nghi và sang trọng của căn hộ này thực sự vượt qua mọi kỳ vọng,
+                            một nơi tuyệt vời để trở về sau mỗi ngày bận rộn.</p>
+                        <div class="phone-number">
+                            <i class="fas fa-phone-alt"></i> 0899607659
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"
+                style="z-index: 0;">
+                <i class="fas fa-arrow-alt-circle-left large-icon"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"
+                style="z-index: 0;">
+                <i class="fas fa-arrow-alt-circle-right large-icon"></i>
+            </a>
+        </div>
+
+        <!-- Content -->
+        <div class="container mt-5">
+            <div class="row content-1">
+                <!-- Cột bên trái -->
+                <div class="col-md-8 p-5">
+                    <h1 class="h1-nau">Mang không gian chuyên nghiệp & thoải mái nhất tới khách hàng.</h1>
+                    <p class="pt-5"> Mang phong cách kiến trúc hiện đại, Tòa căn hộ kết hợp quán coffee Twins House– 02
+                        Mỹ Đa Đông 8 – Ngũ Hành Sơn -
+                        Đà Nẵng sở
+                        hữu nội thất được thiết kế tinh tế, trau chuốt tỉ mỉ đảm bảo mang đến sự hài lòng
+                        cho khách hàng.</p>
+                </div>
+
+                <!-- Cột bên phải -->
+                <div class="col-md-4 p-5 block-dad">
+                    <div class="custom-block">
+                        <p class="p-to"><i class="fas fa-warehouse  pr-2" style="color: aliceblue;"></i>400m2 - 3 tầng
+                        </p>
+                        <p class="p-nho"> Tổng diện tích sử dụng</p>
+                    </div>
+                    <div class="custom-block-2">
+                        <h5 class="tang"> <i class="fas fa-check"></i>
+                            Tầng 1:<span class="span-content"> Nhà để xe và coffee shop</span></h5>
+                        <h5 class="tang"> <i class="fas fa-check"></i>
+                            Tầng 2:<span class="span-content"> Căn hộ dịch vụ và home-stay</span></h5>
+                        <h5 class="tang"> <i class="fas fa-check"></i>
+                            Tầng 3:<span class="span-content"> Căn hộ dịch vụ</span></h5>
+                        <h5 class="tang"> <i class="fas fa-check"></i>
+                            Tầng Thượng:<span class="span-content"> Không gian chung</span></h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Content 2-->
+        <div class="container mt-5">
+            <div class="row ">
+                <!-- Cột bên trái -->
+                <div class="col-md-6">
+                    <!-- Hình ảnh -->
+                    <img src="Image/Anh home.jpg" alt="" style="width: 100%;">
+                </div>
+
+                <!-- Cột bên phải -->
+                <div class="col-md-6">
+                    <!-- Nội dung -->
+                    <h1 class="h1-nau">Vị thế Trung tâm – Nâng tầm thương hiệu</h1>
+                    <p class="pt-2">Tọa lạc tại 02
+                        Mỹ Đa Đông 8 – Ngũ Hành Sơn -
+                        Đà Nẵng, nơi có sự phát triển tiện nghĩ bậc nhất Đà Nẵng, TwinsHosue sở hữu vị trí “vàng” thuận
+                        tiện cho việc đi chợ,đi học và di chuyển ra biển .</p>
+                    <div class="row">
+                        <div class="icon-text col-6">
+
+                            <p class="p-big pt-2"> <i class="fas fa-map-marker-alt big"></i> VỊ TRÍ THUẬN TIỆN</p>
+                        </div>
+                        <div class="icon-text col-6">
+
+                            <p class="p-big pt-2"> <i class="fas fa-link big"></i> TIỆN ÍCH ĐẦY ĐỦ</p>
+                        </div>
+                    </div>
+                    <p class="pt-2">Chỉ 5 phút đi bộ, khách hàng dễ dàng tiếp cận trung tâm hành chính quan trọng,
+                        công trình tiện
+                        ích và điểm tham quan du lịch cùng các dịch vụ tiện ích, giải trí…</p>
+                    <button class="btn  tim-kiem " id="detailButton">
+                        Xem Chi Tiết
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hỗ Trợ  -->
+        <div class="container  custom-footer-container  mt-4 pt-4 pb-2">
+            <h1 class="h1-nau">Liên hệ với chúng tôi nếu bạn cần hỗ trợ</h1>
+            <p class="pt-2">Đội chăm sóc khách hàng TwinsHosue Chúng tôi muốn lắng nghe câu hỏi và ý kiến đóng góp từ
+                bạn.
+            </p>
+            <p class="pt-2">Hãy phản hồi cho chúng tôi biết vấn đề của bạn nhé!</p>
+            <div class="row mt-2  custom-footer-row ">
+                <div>
+                    <h5>Hỗ trợ đăng tin</h5>
+                    <p><strong class="ho-tro">Đoàn Hậu</strong><br>Điện thoại: 0902.657.123<br>Zalo: 0902.657.123</p>
+                </div>
+                <div>
+                    <h5>Hỗ trợ đăng tin</h5>
+                    <p> <strong class="ho-tro">Hồ Đức</strong><br>Điện thoại: 0901.424.123<br>Zalo: 0901.424.123</p>
+                </div>
+                <div>
+                    <h5>Hỗ trợ đăng tin</h5>
+                    <p><strong class="ho-tro">Quyền Nguyễn</strong><br>Điện thoại: 0903.007.123<br>Zalo: 0903.007.123
+                    </p>
+                </div>
+                <div>
+                    <h5>Phản ánh/khiếu nại</h5>
+                    <p>Hotline<br>Điện thoại: 0917.686.101<br>Zalo: 0917.686.101</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark text-white mt-4 pt-4 pb-2">
+            <div class="row">
+                <!-- Khu vực 1: Thông tin công ty -->
+                <div class="col-md-5">
+                    <h5>CÔNG TY TNHH Duc-Bat-Pham-House</h5>
+                    <p>Copyright © 2023 ducbatphamhouse.com</p>
+                    <p>CSKH: 0899607659 - Email: nguyenhuuduc3888@gmail.com</p>
+                    <p>Địa chỉ: 02-Mỹ Đa Đông 8,Ngũ Hành Sơn, Tp.Đà Nẵng.</p>
+                    <p>Giấy phép đăng ký kinh doanh số 0313588502 do Sở kế hoạch và Đầu tư thành phố Đà Nẵng cấp
+                        ngày 24/12/2015.</p>
+                </div>
+
+                <!-- Khu vực 2: Hỗ trợ khách hàng -->
+                <div class="col-md-3">
+                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                    <ul>
+                        <li>Bảng giá dịch vụ</li>
+                        <li>Hướng dẫn đăng tin</li>
+                        <li>Câu hỏi thường gặp</li>
+                        <li>Liên hệ</li>
+                        <li>Tin tức và khuyến mãi</li>
+                    </ul>
+                </div>
+
+                <!-- Khu vực 3: Về thuecanho123.com -->
+                <div class="col-md-2">
+                    <h5>VỀ Chúng Tôi</h5>
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Quy định sử dụng</li>
+                        <li>Quy định đăng tin</li>
+                        <li>Quy chế hoạt động</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Giải quyết khiếu nại</li>
+                    </ul>
+                </div>
+
+                <!-- Khu vực 4: Phương thức thanh toán và Kết nối -->
+                <div class="col-md-2">
+                    <h5>KẾT NỐI </h5>
+                    <i class="fab fa-facebook"></i> <!-- Biểu tượng Facebook -->
+                    <i class="fab fa-tiktok"></i> <!-- Biểu tượng TikTok -->
+                    <i class="fab fa-google"></i> <!-- Biểu tượng Google -->
+                    <audio autoplay controls>
+                        <source src="Music/MerryChristmas.mp3" type="audio/mpeg">
+                        Trình duyệt của bạn không hỗ trợ thẻ audio.
+                    </audio>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel" style="color: #eeb043">Tìm kiếm thông tin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #eeb043">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="priceRange">Giá tiền (3.000.000 - 15.000.000)</label>
+                            <span id="priceDisplay"><i class="fas fa-money-bill-wave"></i> <span
+                                    id="priceValue">3.000.000</span> VND</span>
+                            <input type="range" class="form-control-range" id="priceRange" min="3000000" max="15000000"
+                                step="100000" oninput="updatePriceValue(this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label for="areaSelect">Khu vực</label>
+                            <select class="form-control" id="areaSelect">
+                                <option>Hải Châu</option>
+                                <option>Thanh Khê</option>
+                                <option>Liên Chiểu</option>
+                                <option>Ngũ Hành Sơn</option>
+                                <option>Sơn Trà</option>
+                                <option>Cẩm Lệ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="datePicker">Ngày dự kiến vào ở</label>
+                            <input type="date" class="form-control" id="datePicker">
+                        </div>
+                        <div class="form-group">
+                            <label for="datePicker">Ngày dự kiến trả phòng</label>
+                            <input type="date" class="form-control" id="datePicker">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn tim-kiem">Tìm Kiếm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup bản đồ -->
+    <div id="mapPopup" class="map-popup">
+        <div class="map-container">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function updatePriceValue(value) {
+            document.getElementById('priceValue').textContent = new Intl.NumberFormat().format(value);
+        }
+    </script>
+    <script>
+        document.getElementById('detailButton').addEventListener('click', function () {
+            document.getElementById('mapPopup').style.display = 'block';
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function () {
+            document.getElementById('mapPopup').style.display = 'none';
+        });
+
+        // Hàm khởi tạo Google Maps
+        function initMap() {
+            var location = { lat: 16.042980844321466, lng: 108.24159583276746 }; // Cập nhật với vị trí cụ thể
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 20,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAggQYENdUYw5ijCQ1Mr2VoUYELcau4D6c&callback=initMap"
+        async defer></script>
+
+
+</body>
+
+</html>
