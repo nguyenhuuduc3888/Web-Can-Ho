@@ -342,4 +342,8 @@ audio::-webkit-media-controls-panel {
     background-color: #e7a50b; /* Thay đổi màu nền của thanh điều khiển */
     color: #ffffff; /* Thay đổi màu sắc của nút và thanh */
 }
-
+@media (max-width: 992px) {
+    .navbar-brand {
+        display: none;
+    }
+}
